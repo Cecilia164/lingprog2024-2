@@ -61,22 +61,48 @@ void questao01() {
 
 //2. Faça um programa que leia dois valores inteiros e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8, caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
 void questao02() {
-     
+     int n1, n2, adicao;
+	 printf("Digite o numero 1: ");
+	 scanf("%d , &n1");
+	 printf("Digite o numero 2: ");
+	 scanf("%d" ,&n2);
+	 adicao = n1 + n2;
+	 if (adicao > 20) {
+		adicao +=8;
 }
+else {
 
 //3. Faça um programa que leia um número e imprima uma das duas mensagens: "É múltiplo de 3"ou "Não é múltiplo de 3".
 void questao03() {
-	
+	int num;
+	printf("Digite o numero: ");
+	scanf("d", &num);
+	if ((num % 3) == 0)
+	printf("E multiplo de 3");
+else
+printf("Nao e multiplo de 3");
 }
 
 //4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 void questao04() {
-	
+	int num;
+	printf("Digite o numero: ");
+	scanf("%d", &num);
+	if ((num % 5) ==0)
+	print("E divisivel por 5")
+else
+printf("Nao e divisivel por 5")
 }
 
 //5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 void questao05() {
-
+int num;
+printf("Digite o numero: ");
+scanf("%d" , &num);
+if((num % 3) == 0 && (num % 7) ==0)
+   printf("Divisivel por 3 e por 7");
+else
+    printf("Nao e divisivel por 3 e por 7");
 }
 
 //6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
@@ -84,13 +110,27 @@ void questao05() {
 //bruto. Faça um programa em linguagem C que permita entrar com o salário bruto e o
 //valor da prestação e informar se o empréstimo pode ou não ser concedido.
 void questao06() {
-
+int salario prestacao;
+printf("Digite o salario bruto: ");
+scanf("%d" ,&salari);
+print("Digite o valor da prestacao: ");
+scanf("%d" ,&prestacao);
+if (prestacao <= (salario * 0.3))
+  print("Emprestimo consedido");
+else  
+    printf("Emprestimo nao consedido");
 }
 
 //7. Faça um programa que leia um número e indique se o número está compreendido
 //entre 20 e 50 ou não.
 void questao07() {
-
+int num;
+printf("Digite o numero: ");
+scanf("%d" ,&num);
+if (num >= 20 && num <= 50)
+printf("Numero entre 20 e 50");
+else 
+   print("Numero menor que 20 ou maior que 50");
 }
 
 //8. Faça um programa que leia um número e imprima uma das mensagens: 
@@ -109,8 +149,24 @@ void questao09() {
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem
 //crescente.
 void questao10() {
-
+int n1, n2, n3;
+printf("Digite o primeiro numero: ");
+scanf("%d" , &n1);
+printf("Digite o primeiro numero: ");
+scanf("%d" , &n2);
+printf("Digite o terceiro numero: ");
+scanf("%d" , &n3);
+if (n1 < n2 && n1 < n3) {
+	if (n2 < n3)
+	printf("%d, %d, %d" , n1, n2, n3);
+else
+    printf( "%d, %d, %d" , n1, n3, n2);
 }
+else if (n2 < n1 && n2 < n3) {
+	print (n1 < n3)
+	printf("%d, %d, %d" , n2, n1, n3);
+	else
+	    printf("%d, %d, %d" , n2, n3, n1);
 
 //11. Faça um programa que leia 3 números e imprima o maior deles.
 void questao11() {
